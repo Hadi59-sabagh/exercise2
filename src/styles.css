@@ -1,0 +1,120 @@
+/* استایل‌های عمومی */
+body {
+    font-family: "Vazirmatn", Arial, sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
+    text-align: center;
+    padding: 20px;
+    direction: rtl;
+    margin: 0;
+  }
+  
+  /* کانتینر عمومی */
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* تیترها */
+  h2, h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  /* دکمه‌های عمومی */
+  button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #0056b3, #003d80);
+    transform: scale(1.05);
+  }
+  
+  /* ورودی‌های فرم */
+  input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+  }
+  
+  /* ✅ استایل‌های مخصوص لیست کاربران */
+  .user-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-list li {
+    background: white;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+    text-align: right; /* متن را راست چین می‌کند */
+    direction: rtl; /* جهت نوشته را راست به چپ تنظیم می‌کند */
+    padding-right: 15px; /* کمی فاصله برای زیبایی */
+  }
+  
+  
+  .user-list li:hover {
+    transform: scale(1.02);
+  }
+  
+  /* دکمه حذف */
+  .delete-btn {
+    background: linear-gradient(135deg, #ff4d4d, #cc0000);
+  }
+  
+  .delete-btn:hover {
+    background: linear-gradient(135deg, #cc0000, #990000);
+  }
+  
+  /* ✅ استایل‌های مخصوص گالری تصاویر */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.08);
+  }
+  
